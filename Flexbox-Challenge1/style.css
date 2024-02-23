@@ -1,0 +1,162 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  -moz-text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+  scroll-behavior: smooth;
+  overflow: scroll;
+}
+
+/* Remove default margin in favour of better control in authored CSS */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin-block-end: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  line-height: 1.5;
+  font-family: "Roboto", sans-serif;
+}
+
+/* Set shorter line heights on headings and interactive elements */
+h1,
+h2,
+h3,
+h4,
+button,
+input,
+label {
+  line-height: 1.1;
+}
+
+/* Balance text wrapping on headings */
+h1,
+h2,
+h3,
+h4 {
+  text-wrap: balance;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+  color: currentColor;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Make sure textareas without a rows attribute are not tiny */
+textarea:not([rows]) {
+  min-height: 10em;
+}
+
+/* Anything that has been anchored to should have extra scroll margin */
+:target {
+  scroll-margin-block: 5ex;
+}
+/* Designs */
+
+.container {
+  max-width: 1100px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.intro {
+  background-color: #23424a;
+  color: #fff;
+  padding: 2em 0;
+}
+
+.intro__content {
+  width: 60%;
+}
+
+.hero__heading {
+  font-size: 3rem;
+  font-weight: 900;
+}
+
+.hero__text {
+  font-size: 1.3rem;
+  margin-bottom: 2em;
+}
+
+.btn {
+  border: none;
+  font-size: 1.3rem;
+  color: #3a3a3a;
+  border-radius: 20px;
+  padding: 0.3em 1em;
+  background-color: #38cfd9;
+}
+
+.row {
+  display: flex;
+  padding: 2em 0;
+  width: 100%;
+}
+
+.row__heading {
+  color: #87629a;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.row__text {
+  color: #3a3a3a;
+  font-size: 1.3rem;
+}
+
+.col + .col {
+  margin-left: 3em;
+}
+
+.row__bg {
+  background-color: #136c72;
+}
+
+.Cheap_heading {
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.cheap__text {
+  color: #fff;
+  font-size: 1.3rem;
+}
